@@ -1,0 +1,136 @@
+:root {
+  --primary: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+
+  --desktop: 1440px;
+  --mobile: 375px;
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Overpass', sans-serif;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper,
+.thank-wrapper {
+  background-color: var(--dark-blue);
+  padding: 3em;
+  margin: 0 4em;
+  border-radius: 3em;
+  max-width: 650px;
+}
+
+.icon {
+  border-radius: 50%;
+  background-color: #1b222c;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: inline;
+  padding: 1em 1.2em;
+}
+
+.heading {
+  margin: 3em 0;
+}
+
+.heading h1 {
+  color: var(--white);
+  margin-bottom: 0.5em;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.heading p {
+  color: var(--medium-grey);
+  font-size: 1.5rem;
+}
+
+.rate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating {
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(27, 34, 44);
+  color: var(--medium-grey);
+  font-size: 1.8rem;
+}
+
+.rating:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.active {
+  color: var(--white);
+  background-color: var(--medium-grey);
+}
+
+.submit {
+  color: var(--white);
+  background-color: var(--primary);
+  border: none;
+  border-radius: 2em;
+  padding: 0.7em;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  width: 100%;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  margin-top: 2em;
+}
+
+.submit:hover {
+  background-color: var(--white);
+  color: var(--primary);
+  cursor: pointer;
+}
+
+/* thanks content */
+.thank-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selected {
+  background-color: rgb(27, 34, 44);
+  color: var(--primary);
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  font-weight: 400;
+}
+
+.thank-wrapper .heading {
+  margin: 0;
+}
+
+.thank-wrapper .heading h1 {
+  text-align: center;
+}
