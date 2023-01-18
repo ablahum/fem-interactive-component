@@ -1,5 +1,12 @@
-const buttons = document.querySelectorAll('button');
+const main = document.querySelector('.wrapper');
+const thanks = document.querySelector('.thank-wrapper');
 
+const buttons = document.querySelectorAll('.rate');
+const submit = document.getElementById('submit');
+
+const rating = document.getElementById('rating');
+
+// when rating button clicked
 buttons.forEach((button) => {
   button.addEventListener('click', function () {
     buttons.forEach((btn) => btn.classList.remove('active'));
@@ -7,6 +14,14 @@ buttons.forEach((button) => {
   });
 });
 
-const submit = document.getElementsByClassName('submit');
+// when submit button clicked
+submit.addEventListener('click', function () {
+  thanks.classList.remove('hidden');
+  main.style.display = 'none';
+});
 
-console.log(submit);
+buttons.forEach((button) => {
+  button.addEventListener('click', () => {
+    rating.innerHTML = button.innerHTML;
+  });
+});

@@ -51,27 +51,27 @@
         <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
       </div>
 
-      <div class="rate">
-        <button class="rating">1</button>
+      <div class="rates">
+        <button class="rate">1</button>
 
-        <button class="rating">2</button>
+        <button class="rate">2</button>
 
-        <button class="rating">3</button>
+        <button class="rate">3</button>
 
-        <button class="rating">4</button>
+        <button class="rate">4</button>
 
-        <button class="rating">5</button>
+        <button class="rate">5</button>
       </div>
 
       <button
         type="submit"
-        class="submit"
+        id="submit"
       >
         submit
       </button>
     </div>
 
-    <div class="thank-wrapper">
+    <div class="thank-wrapper hidden">
       <div class="thank-icon">
         <img
           src="./images/illustration-thank-you.svg"
@@ -79,7 +79,11 @@
           class="thank-icon"
         />
 
-        <p class="selected">You selected 4 out of 5</p>
+        <p class="selected">
+          You selected
+          <span id="rating"></span>
+          out of 5
+        </p>
       </div>
 
       <div class="heading">
